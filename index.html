@@ -10,9 +10,10 @@
 </head>
 
 <body>
-	<audio id="audio1" data-able-player preload="auto">
+	<audio id="audio1" data-able-player preload="auto" data-meta-type="text" data-meta-div="meta">
 	  <source type="audio/ogg" src="http://petmemain.com:8000/stream"/>
 	  <source type="audio/mpeg" src="http://petmemain.com:8000/stream"/>
+	  <track kind="metadata" src="http://petmemain.com:8000/stream.m3u"/>
 	</audio>
 </body>
 </html>
