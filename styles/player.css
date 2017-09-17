@@ -1,0 +1,133 @@
+@-webkit-keyframes buttonHover {
+  from {-webkit-box-shadow: 0 0 0px 0px #3373dc; }
+  50% {-webkit-box-shadow: 0 0 10px 4px #3373dc; }
+  to {-webkit-box-shadow: 0 0 0px 0px #3373dc; }
+}
+@keyframes colorGradient {
+  0% { background-color: #3373dc; }
+  25% { background-color: #FF3860 ; }
+  50% { background-color: #3373dc; }
+  75% { background-color: #FF3860 ; }
+  100% { background-color: #3373dc; }
+}
+
+div.able-now-playing{
+	display: none !important;
+}
+
+body{
+	background-image: url(/images/stardust.png);
+	background-repeat: repeat;
+}
+
+
+.able-wrapper{
+	max-width: 1000px !important;
+}
+
+.able-window-toolbar input:focus, .able-controller input:focus, .able-controller button:focus, .able-seekbar-head:focus, .able-window-toolbar input:hover, .able-controller input:hover, .able-controller button:hover, .able-seekbar-head:hover{
+	outline-width:0 !important;
+	cursor:pointer;
+}
+
+.able-tooltip, .able-alert {
+    position: absolute;
+    padding: 5px 10px;
+    border-color: #000;
+    border-width: 0px;
+    font-size: smaller;
+    color: #000!important;
+    /*background-color: #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
+    display: none !important;
+}
+
+span.icon-preferences, span.icon-faster, span.icon-slower{
+	display: none !important;
+}
+
+.able{
+	/*box-shadow: none !important;*/
+	border: 0px solid #242424;
+	border-radius: 5px;
+}
+
+.able-status-bar{
+	padding: 0.5% !important;
+	padding-right: 10px !important;
+	background-color: rgba(36, 36, 36, 0.5) !important;
+	color: #f2f2f2 !important;
+	border-radius: 0px 0px 5px 5px !important;
+}
+
+.able-seekbar{
+	background-color: #3273dc !important;
+}
+
+.able-seekbar-head{
+	top: -0.35em !important;
+}
+
+.able-seekbar-head:hover{
+	  -webkit-animation-name: buttonHover;
+	  -webkit-animation-duration: 4s;
+	  -webkit-animation-iteration-count: infinite;
+}
+
+.able-volume-head:hover, .able-volume-head:focus {
+	background-color: #3273dc !important;
+}
+
+.able-white-controls .able-seekbar{
+	border: 0px !important;
+}
+.able-player{ 
+	border-radius: 5px !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.able-volume-track.able-volume-track-on{
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.able-volume-slider{
+	border-radius: 5px 5px 0px 0px !important;
+	height: 76px !important;
+}
+
+.able-controller button:hover {
+    outline-color: #3373dc!important;
+    outline-width: 0px !important;
+}
+
+.able-controller button{
+	outline: 0px !important;
+}
+
+.able-controller{
+	border-radius: 5px 5px 0px 0px !important;
+	/*border: 2px solid #464646;*/
+	border-bottom: 0px !important;
+	border-top: 0px !important;
+	padding-top: 5px;
+	/*background-color: #464646;*/
+	background-image: url(/images/stardust.png);
+}
+
+.able-status{
+	font-size: smaller !important;
+}
+
+.able-status-bar span.able-timer {
+	display: none !important;
+}
+
+.able-status-bar span.able-speed {
+	font-size: smaller;
+	font-style: italic;
+	text-align: left;
+	padding-left: 10px;
+	color: #f2f2f2 !important;
+}

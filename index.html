@@ -6,15 +6,30 @@
 	<script src="scripts/jquery-3.2.1.min.js"></script>
 	<script src="thirdparty/js.cookie.js"></script>
 	<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
-	<script src="build/ableplayer.min.js"></script>
+	<link rel="stylesheet" href="styles/bulma.css" type="text/css"/>
+	<link rel="stylesheet" href="styles/player.css" type="text/css"/>
+	<script src="build/ableplayer.js"></script>
 </head>
 
 <body>
-	<audio id="audio1" data-able-player preload="auto" data-meta-type="text" data-meta-div="meta">
-	  <source type="audio/ogg" src="http://petmemain.com:8000/stream"/>
-	  <source type="audio/mpeg" src="http://petmemain.com:8000/stream"/>
-	</audio>
-
-	<h2>This site is very much unfinished. Things may not work as expected. Thanks for understanding!</h2>
+<section class="hero is-fullheight is-medium frontpage ng-scope">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns">
+				<div class="column is-one-quarter"></div>
+					<div class="column">
+						<h1 class="title has-text-centered" style="color:#f2f2f2;">Onyx Radio</h1>
+						<audio id="stream" data-icon-type="text" data-able-player preload="auto">
+						  <source type="audio/ogg" src="http://petmemain.com:8000/stream"/>
+						  <source type="audio/mpeg" src="http://petmemain.com:8000/stream"/>
+						</audio>
+						<h2 class="subtitle has-text-centered" style="color:#f2f2f2;">This site is still very much unfinished and things might not work properly. <br />Thanks for understanding!</h2>
+					</div>
+					<div class="column is-one-quarter"></div>
+				</div>
+			</div>
+		</div>
+</section>
 </body>
 </html>
+
