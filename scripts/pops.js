@@ -27,10 +27,9 @@ function donatePop() {
 	});
 }
 
-function trackTitle(){
+function checkOffline(){
 	$.ajax({
 		type: 'GET',
-		url: 'http://petmemain.com:8000/status-json.xsl',
 		url: 'http://petmemain.com:8000/stream',
 		error: function(xhr, ajaxOptions, thrownError){
 			if(xhr.status==404){
@@ -42,7 +41,14 @@ function trackTitle(){
 				});
 				$("#queryLink").attr('href', 'http://rhythmhq.live').text("Offline");
 			}
-		},
+		}
+	});
+}
+
+function trackTitle(){
+	$.ajax({
+		type: 'GET',
+		url: 'http://petmemain.com:8000/status-json.xsl',
 		success: function(response, status, xhr){
 			// console.log(response.icestats.source.title);
 			var track = response.icestats.source.title;
