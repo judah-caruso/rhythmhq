@@ -1,14 +1,29 @@
 function aboutPop() {
 	swal({
 		title: "About RhythmHQ",
-		text: "My name a Borat. I come from Kazakhstan. Can I say a first, we support your war of terror! May we show our support to our boys in Iraq! May US and A kill every single terrorist! May your George Bush drink the blood of every single man, women, and child of Iraq! May you destroy their country so that for next thousand years not even a single lizard will survive in their desert!"
+		text: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world. "
+	});
+}
+function submitPop(){
+	var email = "submissions[at]rhythmhq.live"
+	swal({
+		title: "Send Us Music",
+		text: "If you've got something you want us to hear, send it over!  " + "•" + email,
+	});
+}
+
+function contactPop(){
+	var email = "contact[at]rhythmhq.live"
+	swal({
+		title: "Email Us",
+		text: "Find a bug or just wanna say hi? Send us an email! " + "•" + email
 	});
 }
 
 function donatePop() {
 	swal({
 		title: "Support the HQ",
-		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, we don't have donations setup right now. Come back later if you'd like!"
+		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, we don't have donations setup right now. Come back later if you'd still like to donate!"
 	});
 }
 
@@ -16,6 +31,18 @@ function trackTitle(){
 	$.ajax({
 		type: 'GET',
 		url: 'http://petmemain.com:8000/status-json.xsl',
+		url: 'http://petmemain.com:8000/stream',
+		error: function(xhr, ajaxOptions, thrownError){
+			if(xhr.status==404){
+				swal({
+					title: "Stream Offline!",
+					text: "Sorry, but RhythmHQ is offline! Come back later!",
+					button: "Damn",
+					icon: "error"
+				});
+				$("#queryLink").attr('href', 'http://rhythmhq.live').text("Offline");
+			}
+		},
 		success: function(response, status, xhr){
 			// console.log(response.icestats.source.title);
 			var track = response.icestats.source.title;
@@ -24,7 +51,8 @@ function trackTitle(){
 				var shorTrack = track.substr(0, track.length - 4);
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
 			}
-			else if (track.indexOf('.wav') > -1){
+			else if (track.indexOf('.wav') > -1)
+			{
 			{
 				var shorTrack = track.substr(0, track.length - 4);
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
