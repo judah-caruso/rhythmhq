@@ -1,6 +1,9 @@
 @media only screen and (max-device-width: 480px) {
 	zoom: 2;
 }
+@media only screen and (max-device-width: 700px) {
+	zoom: 1;
+}
 
 @-webkit-keyframes buttonHover {
   from {-webkit-box-shadow: 0 0 0px 0px #3373dc; }
