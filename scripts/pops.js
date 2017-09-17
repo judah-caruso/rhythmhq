@@ -8,7 +8,7 @@ function submitPop(){
 	var email = " submissions[at]rhythmhq.live"
 	swal({
 		title: "Send Us Music",
-		text: "If you've got something you want us to hear, send it over!  " + email,
+		text: "If you've got something you want me to hear, send it over!  " + email,
 	});
 }
 
@@ -16,14 +16,14 @@ function contactPop(){
 	var email = " contact[at]rhythmhq.live"
 	swal({
 		title: "Email Us",
-		text: "Find a bug or just wanna say hi? Send us an email! " + email
+		text: "Find a bug or just wanna say hi? Send me an email! " + email
 	});
 }
 
 function donatePop() {
 	swal({
 		title: "Support the HQ",
-		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, we don't have donations setup right now. Come back later if you'd still like to donate!"
+		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, donations aren't setup right now. Check back soon!"
 	});
 }
 
