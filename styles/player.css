@@ -31,6 +31,7 @@ body{
 	background-color: #454349 !important;
 	background-repeat: repeat;
 	overflow: hidden;
+	width: 100%;
 }
 
 .hero-body{
