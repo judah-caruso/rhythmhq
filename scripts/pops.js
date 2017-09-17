@@ -16,7 +16,7 @@ function contactPop(){
 	var email = " contact[at]rhythmhq.live"
 	swal({
 		title: "Contact",
-		text: "Find a bug or just wanna say hi? Send me an email! " + email
+		text: "Find a bug or just wanna say hi? Send me an email! " + email,
 	});
 }
 
@@ -56,17 +56,20 @@ function trackTitle(){
 			{
 				var shorTrack = track.substr(0, track.length - 4);
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
+				$(document).prop('title', "RhythmHQ: " + shorTrack);
 			}
 			else if (track.indexOf('.wav') > -1)
 			{
 			{
 				var shorTrack = track.substr(0, track.length - 4);
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
+				$(document).prop('title', "RhythmHQ: " + shorTrack);
 			}
 		}
 			else
 			{
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + track).text(track);
+				$(document).prop('title', "RhythmHQ: " + track);
 			}
 		}
 	});
