@@ -132,4 +132,5 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	text-align: left;
 	padding-left: 10px;
 	color: #f2f2f2 !important;
+	display: none !important;
 }
