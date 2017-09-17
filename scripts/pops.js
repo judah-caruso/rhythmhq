@@ -7,7 +7,7 @@ function aboutPop() {
 function submitPop(){
 	var email = " submissions[at]rhythmhq.live"
 	swal({
-		title: "Send Us Music",
+		title: "Send Tunes",
 		text: "Have something you want me to hear? Send it over!  " + email,
 	});
 }
@@ -15,7 +15,7 @@ function submitPop(){
 function contactPop(){
 	var email = " contact[at]rhythmhq.live"
 	swal({
-		title: "Email Us",
+		title: "Contact",
 		text: "Find a bug or just wanna say hi? Send me an email! " + email
 	});
 }
