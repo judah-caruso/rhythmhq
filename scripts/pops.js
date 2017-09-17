@@ -81,3 +81,8 @@ function tuneIn(){
 	$('able-button-handler-play').click(trackTitle());
 	// console.log("Got current track title");
 }
+
+$(window).on('load', function() {
+  checkOffline();
+  tuneIn();
+})
