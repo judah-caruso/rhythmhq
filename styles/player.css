@@ -30,6 +30,7 @@ body{
 	/*background-image: url(../images/stardust.png);*/
 	background-color: #454349 !important;
 	background-repeat: repeat;
+	overflow: hidden;
 }
 
 .hero-body{
