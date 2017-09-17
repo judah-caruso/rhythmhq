@@ -85,4 +85,5 @@ function tuneIn(){
 $(window).on('load', function() {
   checkOffline();
   tuneIn();
+  intervalTimer()
 })

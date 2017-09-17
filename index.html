@@ -14,11 +14,10 @@
 	<script src="build/ableplayer.js"></script>
 	<script src="scripts/sweetalert.min.js"></script>
 	<script src="scripts/pops.js"></script>
-<body onload="intervalTimer()">
+<body>
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars4'></div>
-<!-- <div class="logo"><img class="image is-centered" src="../images/logo_sm.png"></div> -->
 <section class="hero is-fullheight is-medium frontpage ng-scope">
 		<div class="hero-body">
 		<section class="section">
@@ -33,7 +32,7 @@
 						  </ul>
 						</div>
 					</div>
-						<audio id="stream" data-icon-type="text" data-able-player preload="auto">
+						<audio id="stream" data-icon-type="text" data-able-player preload="auto" autoplay>
 						  <source type="audio/ogg" src="http://petmemain.com:8000/stream"/>
 						  <source type="audio/mpeg" src="http://petmemain.com:8000/stream"/>
 						</audio>
