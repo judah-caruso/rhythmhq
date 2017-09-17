@@ -8,7 +8,7 @@ function submitPop(){
 	var email = " submissions[at]rhythmhq.live"
 	swal({
 		title: "Send Us Music",
-		text: "If you've got something you want me to hear, send it over!  " + email,
+		text: "Have something you want me to hear? Send it over!  " + email,
 	});
 }
 
