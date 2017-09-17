@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>RhythmHQ Internet Radio</title>
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<script src="thirdparty/modernizr.custom.js"></script>
 	<script src="scripts/jquery-3.2.1.min.js"></script>
 	<script src="thirdparty/js.cookie.js"></script>
@@ -10,26 +12,35 @@
 	<link rel="stylesheet" href="styles/player.css" type="text/css"/>
 	<link rel="stylesheet" href="styles/stars.css" type="text/css"/>
 	<script src="build/ableplayer.js"></script>
-<body>
+	<script src="scripts/sweetalert.min.js"></script>
+	<script src="scripts/pops.js"></script>
+	<script type="text/javascript">tuneIn()</script>
+<body onload="intervalTimer()">
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars4'></div>
+<!-- <div class="logo"><img class="image is-centered" src="../images/logo_sm.png"></div> -->
 <section class="hero is-fullheight is-medium frontpage ng-scope">
 		<div class="hero-body">
+		<section class="section">
 			<div class="container">
-				<div class="columns">
-				<div class="column is-one-quarter"></div>
-					<div class="column">
-						<h1 class="title has-text-centered" style="color:#f2f2f2;">RhythmHQ Radio</h1>
+					<div class="logo"><img class="image is-centered" src="../images/logo_sm.png"></div>
+					<div class="tabs is-centered">
+						  <ul>
+						    <li><a href="http://rhythmhq.live/">- HOME</a></li>
+						    <li><a onclick="aboutPop()">ABOUT</a></li>
+						    <li><a onclick="donatePop()">DONATE -</a></li>
+						  </ul>
+						</div>
+					</div>
 						<audio id="stream" data-icon-type="text" data-able-player preload="auto">
 						  <source type="audio/ogg" src="http://petmemain.com:8000/stream"/>
 						  <source type="audio/mpeg" src="http://petmemain.com:8000/stream"/>
 						</audio>
-						<h2 class="subtitle has-text-centered" style="color:#f2f2f2;">This site is still very much unfinished and things might not work properly. <br />Thanks for understanding!</h2>
-					</div>
-					<div class="column is-one-quarter"></div>
-				</div>
-			</div>
+						<div class="container text-is-centered">
+						<div id="nowplaying"><p style="color:white;">Now Playing: <a id="queryLink" target="_blank"></a></p></div>
+						</div>
+		</section>
 		</div>
 </section>
 </body>

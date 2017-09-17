@@ -15,6 +15,17 @@ div.able-now-playing{
 	display: none !important;
 }
 
+
+.swal-button{
+	background-color: #3373dc !important;
+}
+.tabs a, .tabs a:hover{
+	color: #3373dc;
+}
+a, a:hover {
+	color: #3373dc;
+}
+
 body{
 	/*background-image: url(../images/stardust.png);*/
 	background-color: #454349 !important;
@@ -23,7 +34,8 @@ body{
 
 
 .able-wrapper{
-	max-width: 1000px !important;
+	max-width: 500px; !important;
+	margin: 0 auto;
 }
 
 .able-window-toolbar input:focus, .able-controller input:focus, .able-controller button:focus, .able-seekbar-head:focus, .able-window-toolbar input:hover, .able-controller input:hover, .able-controller button:hover, .able-seekbar-head:hover{
@@ -97,10 +109,11 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 .able-volume-slider{
 	border-radius: 5px 5px 0px 0px !important;
 	height: 76px !important;
+	background-color: rgba(36, 36, 36, 0.7) !important;
 }
 
 .able-controller button:hover {
-    outline-color: #3373dc!important;
+    outline-color: #3373dc !important;
     outline-width: 0px !important;
 }
 
@@ -136,4 +149,18 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	display: none !important;
 }
 
-
+.logo img, .logo image{
+	margin: 0 auto;
+	position: relative;
+}
+.logo{
+		padding-bottom: 20px;
+}
+#nowplaying{
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+#nowplaying a{
+	color: white;
+}
