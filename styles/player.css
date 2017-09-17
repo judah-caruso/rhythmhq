@@ -78,6 +78,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 
 .able-volume-head:hover, .able-volume-head:focus {
 	background-color: #3273dc !important;
+	cursor:pointer;
 }
 
 .able-white-controls .able-seekbar{
