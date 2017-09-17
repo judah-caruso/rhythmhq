@@ -19,8 +19,21 @@ function trackTitle(){
 		success: function(response, status, xhr){
 			// console.log(response.icestats.source.title);
 			var track = response.icestats.source.title;
-			var shorTrack = track.substr(0, track.length - 4);
-			$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
+			if (track.indexOf('.mp3') > -1)
+			{
+				var shorTrack = track.substr(0, track.length - 4);
+				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
+			}
+			else if (track.indexOf('.wav') > -1){
+			{
+				var shorTrack = track.substr(0, track.length - 4);
+				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
+			}
+		}
+			else
+			{
+				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + track).text(track);
+			}
 		}
 	});
 }
