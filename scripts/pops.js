@@ -1,7 +1,7 @@
 function aboutPop() {
 	swal({
 		title: "About RhythmHQ",
-		text: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world. "
+		text: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world. RhythmHQ was created by Kyotoshift."
 	});
 }
 function submitPop(){
