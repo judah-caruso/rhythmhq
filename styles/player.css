@@ -32,6 +32,10 @@ body{
 	background-repeat: repeat;
 }
 
+.hero-body{
+	margin: 0 auto;
+}
+
 
 .able-wrapper{
 	max-width: 500px; !important;
