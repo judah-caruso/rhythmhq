@@ -45,6 +45,17 @@ function checkOffline(){
 	});
 }
 
+function currentListeners(){
+	$.ajax({
+		type: 'GET',
+		url: 'http://petmemain.com:8000/status-json.xsl',
+		success: function(response, status, xhr){
+			// console.log(response.icestats.source.listeners);
+			// $('#listeners span').text(response.icestats.source.listeners);
+		}
+	});
+}
+
 function trackTitle(){
 	$.ajax({
 		type: 'GET',
@@ -60,12 +71,10 @@ function trackTitle(){
 			}
 			else if (track.indexOf('.wav') > -1)
 			{
-			{
 				var shorTrack = track.substr(0, track.length - 4);
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + shorTrack).text(shorTrack);
 				$(document).prop('title', "RhythmHQ: " + shorTrack);
 			}
-		}
 			else
 			{
 				$("#queryLink").attr('href', 'https://soundcloud.com/search?q=' + track).text(track);
@@ -88,5 +97,6 @@ function tuneIn(){
 $(window).on('load', function() {
   checkOffline();
   tuneIn();
+  currentListeners()
   intervalTimer()
 })

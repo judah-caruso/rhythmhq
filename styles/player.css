@@ -41,6 +41,12 @@ body{
 	width: 100%;
 }
 
+#listeners{
+	text-align: center;
+	font-size: smaller;
+}
+
+
 .hero-body{
 	margin: 0 auto;
 }
