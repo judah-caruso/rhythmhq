@@ -1,8 +1,6 @@
 @media only screen and (max-device-width: 480px) {
-	zoom: 2;
 }
 @media only screen and (max-device-width: 700px) {
-	zoom: 1;
 }
 
 @-webkit-keyframes buttonHover {
@@ -22,9 +20,8 @@ div.able-now-playing{
 	display: none !important;
 }
 
-
-.swal-button{
-	background-color: #3373dc !important;
+.swal2-modal .swal2-content{
+	font-weight: 400 !important;
 }
 .tabs a, .tabs a:hover{
 	color: #fff;
@@ -53,6 +50,7 @@ body{
 
 
 .able-wrapper{
+	z-index: 2;
 	max-width: 500px; !important;
 	margin: 0 auto;
 }
@@ -183,3 +181,6 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 #nowplaying a{
 	color: white;
 }
+/*.modal{
+	z-index: 10000;
+}*/

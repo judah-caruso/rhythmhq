@@ -1,7 +1,7 @@
 function aboutPop() {
 	swal({
 		title: "About RhythmHQ",
-		text: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world. RhythmHQ was created by Kyotoshift."
+		html: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world.<br /><span style='font-size:smaller;'>This project was created by Kyotoshift.</span>"
 	});
 }
 function submitPop(){
@@ -13,18 +13,33 @@ function submitPop(){
 }
 
 function contactPop(){
-	var email = " contact[at]rhythmhq.live"
+	var email = " hello[at]rhythmhq.live"
 	swal({
 		title: "Contact",
 		text: "Find a bug or just wanna say hi? Send me an email! " + email,
 	});
 }
 
+// function donatePop() {
+// 	swal({
+// 		title: "Support the HQ",
+// 		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, donations aren't setup right now. Check back soon!"
+// 	});
+// }
+
 function donatePop() {
+	var linkURL = "https://www.patreon.com/rhythmhq"
 	swal({
-		title: "Support the HQ",
-		text: "First off, thanks a lot for considering to support RhythmHQ! Unfortuantely, donations aren't setup right now. Check back soon!"
-	});
+  html: "This is going to redirect you to our Patreon page!<br />Is that okay?",
+  confirmButtonText: 'Yep',
+  cancelButtonText: 'Nope',
+  showCancelButton: true,
+  cancelButtonColor: '#d33',
+  confirmButtonColor: '#3273dc',
+  reverseButtons: true
+}).then(function () {
+  	window.location = linkURL
+})
 }
 
 function checkOffline(){
@@ -36,8 +51,8 @@ function checkOffline(){
 				swal({
 					title: "Stream Offline!",
 					text: "Sorry, but RhythmHQ is offline! Come back later!",
-					button: "Damn",
-					icon: "error"
+					confirmButtonText: "Damn",
+					type: 'error'
 				});
 				$("#queryLink").attr('href', 'http://rhythmhq.live').text("Offline");
 			}
@@ -51,7 +66,7 @@ function currentListeners(){
 		url: 'http://petmemain.com:8000/status-json.xsl',
 		success: function(response, status, xhr){
 			// console.log(response.icestats.source.listeners);
-			// $('#listeners span').text(response.icestats.source.listeners);
+			$('#listeners span').text(response.icestats.source.listeners);
 		}
 	});
 }
@@ -100,3 +115,14 @@ $(window).on('load', function() {
   currentListeners()
   intervalTimer()
 })
+
+function modalShow(){
+	var modal = document.getElementById('modal');
+  	var elements = document.getElementsByClassName('toggle-modal');
+  	for (var i = 0; i < elements.length; i++) {
+    	elements[i].addEventListener('click', toggleClass);
+    }
+	function toggleClass() {
+    	modal.classList.toggle('is-active');
+    }
+}
