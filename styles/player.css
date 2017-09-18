@@ -26,10 +26,12 @@ div.able-now-playing{
 .tabs a, .tabs li, .tabs a:hover{
 	color: #fff;
 	cursor: pointer;
+	cursor: hand;
 }
 a, a label, a:hover {
 	color: #fff;
 	cursor: pointer;
+	cursor: hand;
 }
 
 body{
@@ -60,6 +62,7 @@ body{
 .able-window-toolbar input:focus, .able-controller input:focus, .able-controller button:focus, .able-seekbar-head:focus, .able-window-toolbar input:hover, .able-controller input:hover, .able-controller button:hover, .able-seekbar-head:hover{
 	outline-width:0 !important;
 	cursor: pointer;
+	cursor: hand;
 }
 
 .able-tooltip, .able-alert {
@@ -111,6 +114,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 .able-volume-head:hover, .able-volume-head:focus {
 	background-color: #3273dc !important;
 	cursor:pointer;
+	cursor:hand;
 }
 
 .able-white-controls .able-seekbar{
