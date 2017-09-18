@@ -117,6 +117,10 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	cursor:hand;
 }
 
+.stardestroyer{
+	z-index: -1;
+}
+
 .able-white-controls .able-seekbar{
 	border: 0px !important;
 }
