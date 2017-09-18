@@ -23,11 +23,13 @@ div.able-now-playing{
 .swal2-modal .swal2-content{
 	font-weight: 400 !important;
 }
-.tabs a, .tabs a:hover{
+.tabs a, .tabs li, .tabs a:hover{
 	color: #fff;
+	cursor: pointer;
 }
-a, a:hover {
+a, a label, a:hover {
 	color: #fff;
+	cursor: pointer;
 }
 
 body{
@@ -57,7 +59,7 @@ body{
 
 .able-window-toolbar input:focus, .able-controller input:focus, .able-controller button:focus, .able-seekbar-head:focus, .able-window-toolbar input:hover, .able-controller input:hover, .able-controller button:hover, .able-seekbar-head:hover{
 	outline-width:0 !important;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .able-tooltip, .able-alert {
@@ -139,6 +141,22 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	font-size: 13px !important;
 }
 
+.footerlinks{
+	/*padding: 4vh;
+    color: white;
+    text-align: center;*/
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 24px;
+}
+
+.footerlinks img{
+	height: auto;
+    max-width: 100%;
+
+}
+
 .able-controller{
 	border-radius: 5px 5px 0px 0px !important;
 	/*border: 2px solid #464646;*/
@@ -171,7 +189,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	position: relative;
 }
 .logo{
-		padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 #nowplaying{
 	margin: 0 auto;

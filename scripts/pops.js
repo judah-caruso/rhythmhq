@@ -1,6 +1,7 @@
 function aboutPop() {
 	swal({
 		title: "About RhythmHQ",
+		confirmButtonColor: '#3273dc',
 		html: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world.<br /><span style='font-size:smaller;'>This project was created by Kyotoshift.</span>"
 	});
 }
@@ -8,7 +9,8 @@ function submitPop(){
 	var email = " submissions[at]rhythmhq.live"
 	swal({
 		title: "Send Tunes",
-		text: "Have something you want me to hear? Send it over!  " + email,
+		confirmButtonColor: '#3273dc',
+		html: "Have something you want me to hear? Send it over!<br />" + "<span style='font-size:medium;'>" + email + "</span>",
 	});
 }
 
@@ -16,7 +18,8 @@ function contactPop(){
 	var email = " hello[at]rhythmhq.live"
 	swal({
 		title: "Contact",
-		text: "Find a bug or just wanna say hi? Send me an email! " + email,
+		confirmButtonColor: '#3273dc',
+		html: "Find a bug or just wanna say hi? Send me an email!<br /> " + "<span style='font-size:medium;'>" + email + "</span>",
 	});
 }
 
@@ -34,12 +37,12 @@ function donatePop() {
   confirmButtonText: 'Yep',
   cancelButtonText: 'Nope',
   showCancelButton: true,
-  cancelButtonColor: '#d33',
+  // cancelButtonColor: '#d33',
   confirmButtonColor: '#3273dc',
   reverseButtons: true
-}).then(function () {
+}).then(function (result) {
   	window.location = linkURL
-})
+}).catch(swal.noop)
 }
 
 function checkOffline(){
@@ -66,7 +69,8 @@ function currentListeners(){
 		url: 'http://petmemain.com:8000/status-json.xsl',
 		success: function(response, status, xhr){
 			// console.log(response.icestats.source.listeners);
-			$('#listeners span').text(response.icestats.source.listeners);
+			var response = response.icestats.source.listeners
+			$('#listeners span').text(response);
 		}
 	});
 }
@@ -110,9 +114,9 @@ function tuneIn(){
 }
 
 $(window).on('load', function() {
-  checkOffline();
-  tuneIn();
-  currentListeners()
+  checkOffline()
+  tuneIn()
+  // currentListeners();
   intervalTimer()
 })
 
