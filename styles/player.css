@@ -1,6 +1,12 @@
 @media only screen and (max-device-width: 480px) {
 }
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 800px) {
+	.logo img{
+		content:url("/images/logo_mobile.png");
+	}
+	#nowplaying{
+		font-size: smaller;
+	}
 }
 
 @-webkit-keyframes buttonHover {
@@ -99,12 +105,16 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 
 .able-seekbar{
 	background-color: #3273dc !important;
+	border-radius: 5px;
 }
 
-.able-seekbar-head{
+/*.able-seekbar-head{
 	top: -0.35em !important;
-}
+}*/
 
+.able-seekbar-wrapper{
+    min-width: 100px;
+}
 .able-seekbar-head:hover{
 	  -webkit-animation-name: buttonHover;
 	  -webkit-animation-duration: 4s;
@@ -162,7 +172,6 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 .footerlinks img{
 	height: auto;
     max-width: 100%;
-
 }
 
 .able-controller{
@@ -172,7 +181,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	border-top: 0px !important;
 	padding-top: 5px;
 	background-color: rgba(36, 36, 36, 0.7) !important;
-	/*background-image: url(../images/stardust.png);*/
+	max-height: 40px;
 }
 
 .able-status{

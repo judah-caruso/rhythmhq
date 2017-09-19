@@ -47,15 +47,15 @@
 	<div id='stars4'></div>
 </div>
 <section class="hero is-fullheight is-medium">
-		<div class="hero-body is-inline-block-touch">
+		<div class="hero-body"> <!-- is-inline-block-touch -->
 		<section class="section">
 			<div class="container">
 					<div class="logo"><img class="image is-centered" src="../images/logo_sm.png"></div>
 					<div class="tabs is-centered">
 						  <ul>
 						    <li><a onclick="aboutPop()">ABOUT</a></li>
-						    <li><a onclick="submitPop()">SUBMIT MUSIC</a></li>
-						    <li><a onclick="contactPop()">CONTACT</a></li>
+						    <li class="is-hidden-mobile"><a onclick="submitPop()">SUBMIT MUSIC</a></li>
+						    <li class="is-hidden-mobile"><a onclick="contactPop()">CONTACT</a></li>
 						    <li><a onclick="donatePop()">DONATE</a></li>
 						  </ul>
 						</div>
