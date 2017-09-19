@@ -130,3 +130,22 @@ function modalShow(){
     	modal.classList.toggle('is-active');
     }
 }
+function funStuff(){
+	var hex = ['454349','3373dc','DC3333','5DDC33','33D6DC','3B33DC', 'DC33D9'];
+	$(document).jkey('p',function(){
+		        var color = '#';
+                color += hex[Math.floor(Math.random() * hex.length)];
+                document.getElementsByClassName('pressIOP')[0].style.background = color;
+                document.getElementsByClassName('able-seekbar')[0].style.background = color;
+            })
+	$(document).jkey('o',function(){
+		        var color = '#';
+                color += hex[Math.floor(Math.random() * hex.length)];
+                document.getElementsByClassName('pressIOP')[0].style.background = color;
+            })
+	$(document).jkey('i',function(){
+		        var color = '#';
+                color += hex[Math.floor(Math.random() * hex.length)];
+                document.getElementsByClassName('able-seekbar')[0].style.background = color;
+            })
+	};

@@ -22,6 +22,7 @@
   100% { background-color: #3373dc; }
 }
 
+
 div.able-now-playing{
 	display: none !important;
 }
@@ -42,7 +43,7 @@ a, a label, a:hover {
 
 body{
 	/*background-image: url(../images/stardust.png);*/
-	background-color: #454349 !important;
+	background-color: #454349;
 	background-repeat: repeat;
 	overflow: hidden;
 	width: 100%;
@@ -104,7 +105,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 }
 
 .able-seekbar{
-	background-color: #3273dc !important;
+	background-color: #3273dc;
 	border-radius: 5px;
 }
 
