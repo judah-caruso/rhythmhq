@@ -1,5 +1,5 @@
 function infoPop() {
-	var artists = ['alex martian', 'AVIX', 'Bravo', 'Dated', 'Frequent', 'fushou', 'KaTT', 'KURO', 'Kuya Koala', 'Kyotoshift', 'lordapex', 'mai', 'MAYZN', 'MNDBD', 'Ramaj Eroc', 'Soiree', 'SoulChief', 'steezy prime', 'YUNG DVREN'];
+	var artists = ['alex martian', 'AVIX', 'Bravo', 'Dated', 'EllarSound', 'Frequent', 'fushou', 'KaTT', 'KURO', 'Kuya Koala', 'Kyotoshift', 'lordapex', 'mai', 'MAYZN', 'MNDBD', 'Nikola Gala', 'prxz', 'Ramaj Eroc', 'Soiree', 'SoulChief', 'steezy prime', 'YUNG DVREN'];
 	$(document).ready(function(){
 		var list = "";
 		for(i=0; i<artists.length; i++){
