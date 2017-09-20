@@ -105,9 +105,11 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 }
 
 .scrolly{
-	max-width:250px;
+	 background-color: #f2f2f2;
+	/*max-width:250px;*/
 	max-height:250px;
 	overflow: scroll;
+	overflow-x: hidden;
 	margin:0 auto;
 }
 
