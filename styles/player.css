@@ -214,6 +214,7 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 .logo img, .logo image{
 	margin: 0 auto;
 	position: relative;
+	cursor: pointer;
 }
 .logo{
 	padding-bottom: 20px;
