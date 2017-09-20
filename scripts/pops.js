@@ -10,7 +10,7 @@ function infoPop() {
 	swal({
 		title: "Featured Artists",
 		confirmButtonColor: '#3273dc',
-		html: "<div class='scrolly' id='test'><ul id='aList'></ul></div>"
+		html: "<div class='scrollBox' id='test'><ul id='aList'></ul></div>"
 	});
 }
 
