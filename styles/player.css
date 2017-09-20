@@ -104,6 +104,13 @@ span.icon-preferences, span.icon-faster, span.icon-slower{
 	border-radius: 0px 0px 5px 5px !important;
 }
 
+.scrolly{
+	max-width:250px;
+	max-height:250px;
+	overflow: scroll;
+	margin:0 auto;
+}
+
 .able-seekbar{
 	background-color: #3273dc;
 	border-radius: 5px;

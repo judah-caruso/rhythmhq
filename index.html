@@ -30,6 +30,8 @@
 	<meta name="twitter:image" content="http://rhythmhq.live/images/favicons/android-chrome-512x512.png">
 	<script src="thirdparty/modernizr.custom.js"></script>
 	<script src="scripts/jquery-3.2.1.min.js"></script>
+	<script src="scripts/jquery.fullPage.min.js"></script>
+	<link rel="scripts/jquery.fullPage.css"></link>
 	<script src="thirdparty/js.cookie.js"></script>
 	<link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
 	<link rel="stylesheet" href="styles/bulma.css" type="text/css"/>
@@ -52,7 +54,7 @@
 		<div class="hero-body is-inline-block-touch"> 
 		<section class="section">
 			<div class="container">
-					<div class="logo"><img class="image is-centered" src="../images/logo_sm.png"></div>
+					<div class="logo" onclick="infoPop()"><img class="image is-centered" src="../images/logo_sm.png"></div>
 					<div class="tabs is-centered">
 						  <ul>
 						    <li><a onclick="aboutPop()">ABOUT</a></li>
