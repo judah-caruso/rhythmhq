@@ -57,7 +57,7 @@
     // speed can be a number or 'auto'
     // if 'auto', the speed will be calculated based on the formula:
     // (current scroll position - target scroll position) / autoCoeffic
-    speed: 400,
+    speed: 'auto',
 
     // coefficient for "auto" speed
     autoCoefficient: 2,
