@@ -30,21 +30,19 @@
 	<meta name="twitter:image" content="http://rhythmhq.live/images/favicons/android-chrome-512x512.png">
 	<script src="../thirdparty/modernizr.custom.js"></script>
 	<script src="../scripts/jquery-3.2.1.min.js"></script>
-	<script src="../scripts/jquery.fullPage.min.js"></script>
-	<link rel="../scripts/jquery.fullPage.css"></link>
 	<script src="../thirdparty/js.cookie.js"></script>
 	<link rel="stylesheet" href="../build/ableplayer.min.css" type="text/css"/>
-	<link rel="stylesheet" href="../styles/bulma.css" type="text/css"/>
-	<link rel="stylesheet" href="../styles/player.css" type="text/css"/>
-	<link rel="stylesheet" href="../styles/stars.css" type="text/css"/>
-	<link rel="stylesheet" href="../styles/pricing-table.css" type="text/css"/>
+	<link rel="stylesheet" href="../styles/bulma0.5.3.css" type="text/css"/>
+	<link rel="stylesheet" href="../styles/artists.css" type="text/css"/>
+	<!-- <link rel="stylesheet" href="../styles/ionicons.css" type="text/css"> -->
+	<!-- <link rel="stylesheet" href="../styles/stars.css" type="text/css"/> -->
 	<!-- <script src="scripts/sweetalert.min.js"></script> -->
 	<script src="../build/ableplayer.js"></script>
 	<link rel="stylesheet" href="../styles/sweetalert2.min.css"></script>
 	<script src="../scripts/sweetalert2.min.js"></script>
-	<script src="../scripts/pops.js"></script>
+	<script src="../scripts/jquery.smooth-scroll.js"></script>
+	<!-- <script src="../scripts/pops.js"></script> -->
 	<script src="../scripts/jquery.jkey.min.js"></script>
-	<script>funStuff();</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -54,8 +52,55 @@
 		ga('create', 'UA-103453342-2', 'auto');
 		ga('send', 'pageview');
 </script>
-</head>
-<body>
+<script>
+$(document).ready(function(){
+  $('body').smoothScroll({
+    delegateSelector: 'a'
+  });
+});
 
+</script>
+<style type="text/css">main{position:fixed;}</style>
+</head>
+<body style=">
+<div id="nav">
+     <ul>
+         <li><a class="scroll" href="#p3">About</a></li>
+     </ul>
+</div>
+<div class="smooth" id="p1">
+<section class="hero is-fullheight is-dark" id="p1">
+This is a test
+</section>
+</div>
+<div class="smooth" id="p2">
+<section class="hero is-fullheight is-info" id="p2">
+Another test
+</section>
+</div>
+<div class="smooth" id="p3">
+<section class="hero is-fullheight is-warning">
+And another test
+</section>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="content">
+		<div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/jgthms/bulma">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
