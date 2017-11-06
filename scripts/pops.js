@@ -1,5 +1,5 @@
 function infoPop() {
-	var artists = ['alex martian', 'AVIX', 'Bravo', 'Dated', 'EllarSound', 'Frequent', 'fushou', 'G.E.L.S', 'Hudson Lee', 'Jansons', 'Jonny Ha$h', 'KaTT', 'KURO', 'Kuya Koala', 'Kyotoshift', 'lordapex', 'mai', 'MAYZN', 'm-cubed', 'Mindex', 'MNDBD', 'O.S.L', 'prxz', 'Ramaj Eroc', 'Shindig', 'Soiree', 'SoulChief', 'steezy prime', 'summet', 'YUNG DVREN'];
+	var artists = ['alex martian', 'AVIX', 'BLUEAMERICANS', 'Bravo', 'Dated', 'EllarSound', 'Frequent', 'fushou', 'G.E.L.S', 'Hudson Lee', 'Jansons', 'Jonny Ha$h', 'KaTT', 'KURO', 'Kuya Koala', 'Kyotoshift', 'lordapex', 'mai', 'MAYZN', 'm-cubed', 'Mindex', 'MNDBD', 'O.S.L', 'prxz', 'Ramaj Eroc', 'Shindig', 'Soiree', 'SoulChief', 'steezy prime', 'summet', 'YUNG DVREN'];
 	$(document).ready(function(){
 		var list = "";
 		for(i=0; i<artists.length; i++){
@@ -19,6 +19,14 @@ function aboutPop() {
 		title: "About RhythmHQ",
 		confirmButtonColor: '#3273dc',
 		html: "RhythmHQ is an independent internet radio station showcasing some awesome underground artists from around the world.<br /><span style='font-size:smaller;'>This project was created by Kyotoshift.</span>"
+	});
+}
+
+function schedulePop() {
+	swal({
+		title: "RhythmHQ Schedule",
+		confirmButtonColor: '#3273dc',
+		html: "RhythmHQ is live every Friday @ 5:00 PM (CST)"
 	});
 }
 function submitPop(){
