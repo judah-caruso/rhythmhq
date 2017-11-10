@@ -72,7 +72,8 @@ function donatePop() {
 function checkOffline(){
 	$.ajax({
 		type: 'GET',
-		url: 'http://petmemain.com:8000/stream',
+		// url: 'http://petmemain.com:8000/stream',
+		url: 'http://streaming.shoutcast.com/RhythmHQ',
 		error: function(xhr, ajaxOptions, thrownError){
 			if(xhr.status==404){
 				swal({
